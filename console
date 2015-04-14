@@ -4,8 +4,8 @@ set_time_limit(0);
 require_once __DIR__.'/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
-use SDPHP\HangMan\HangManCommand;
+use SDPHP\HangMan\HangManGameCommand;
 
 $application = new Application();
-$application->add(new HangManCommand());
+$application->add(new HangManGameCommand());
 $application->run();
